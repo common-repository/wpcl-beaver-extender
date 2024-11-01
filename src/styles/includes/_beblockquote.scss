@@ -1,0 +1,11 @@
+.be-blockquote {
+	span {
+		display: block;
+	}
+	cite {
+		display: block;
+		span {
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@import 'includes/mixins';
+
+.be-scss-editor-header {
+	@include flexbox( 'row' );
+	span.gutter {
+		height: 16px;
+		width: 34px;
+		text-align: right;
+		background: #f0f0f0;
+		color: #333;
+	    padding-right: 6px;
+	    line-height: 16px;
+	    display: inline-block;
+	    box-sizing: border-box;
+	}
+	.code-header {
+		background: #fff;
+		display: inline-block;
+		padding-left: 6px;
+		font-weight: 600;
+		flex: 1;
+	}
+}

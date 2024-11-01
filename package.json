@@ -1,0 +1,40 @@
+{
+  "name": "wpcl-beaver-extender",
+  "version": "1.0.0",
+  "description": "WPCL Beaver Extender Plugin",
+  "main": "src/scripts/public.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/midwestdigitalmarketing/vegas-club.git"
+  },
+  "author": "Mid-West Digital Marketing",
+  "license": "GPL-2.0",
+  "homepage": "https://bitbucket.org/midwestdigitalmarketing/vegas-club#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@wordpress/babel-preset-default": "^3.0.2",
+    "autoprefixer": "^9.4.9",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "glob": "^7.1.3",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-multi": "^1.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "pixrem": "^5.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-stream": "^5.2.1"
+  }
+}

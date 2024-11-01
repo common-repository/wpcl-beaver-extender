@@ -1,0 +1,16 @@
+.be-tabs {
+	display: block !important;
+	.be-tabs-labels {
+		display: none !important;
+	}
+	.be-tabs-panels {
+		.be-tabs-label {
+			display: block;
+		}
+		.be-tabs-panel {
+			&:active {
+				display: block;
+			}
+		}
+	}
+}

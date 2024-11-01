@@ -1,0 +1,99 @@
+.be-tabs {
+	.be-tabs-labels {
+		list-style-type: none;
+		list-style-position: inside;
+		padding: 0;
+		margin: 0;
+	}
+	.be-tabs-label {
+		border: 1px solid;
+		border-color: transparent;
+		padding: 10px;
+		position: relative;
+		background: #fff;
+		a, a:link {
+			position: relative;
+			display: block;
+			transition: all .25s ease, top 0s ease, left 0s ease;
+		}
+		&.active {
+			border-color: #eee;
+		}
+		.label-icon {
+			margin-right: 10px;
+		}
+	}
+
+	.be-tabs-panels {
+		.be-tabs-label {
+			display: none;
+			border: none;
+			border-top: 1px solid #eee;
+			&:first-child {
+				border-top: none;
+			}
+			&.active {
+				// border-bottom: none;
+			}
+			a, a:link {
+				position: relative;
+				&:after {
+					content: '+';
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+	}
+	.be-tabs-panels-container {
+		border: 1px solid #eee;
+		background: #fff;
+	}
+	.be-tabs-panel {
+		padding: 1.618rem;
+		display: none;
+		&.active {
+			display: block;
+		}
+
+	}
+
+	&.vertical {
+		@include flexbox( 'row' );
+		.be-tabs-panels-container {
+			flex: 1;
+		}
+		.be-tabs-label {
+			a, a:link {
+				left: 1px;
+			}
+			&.active {
+				left: 1px;
+				border-right: none;
+				a, a:link {
+					left: 0;
+				}
+			}
+		}
+	}
+	&.horizontal {
+		.be-tabs-labels {
+			list-style-type: none;
+			list-style-position: inside;
+			padding: 0;
+			@include flexbox( 'row' );
+		}
+		.be-tabs-label {
+			a, a:link {
+				top: 1px;
+			}
+			&.active {
+				top: 1px;
+				border-bottom: none;
+				a, a:link {
+					top: 0;
+				}
+			}
+		}
+	}
+}

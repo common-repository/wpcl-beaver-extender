@@ -1,0 +1,126 @@
+.be-icon,
+.be-icon:before {
+	line-height: 1;
+	text-align: center;
+	width: 1em;
+	height: 1em;
+}
+.be-icon-wrap {
+	width: 100%;
+	.be-icon-container {
+		display: inline-block;
+		vertical-align: middle;
+	    line-height: 1;
+	    overflow: hidden;
+	}
+	&.text-right,
+	&.text-left {
+		@include flexbox( 'row' );
+	}
+	// .be-icon-text,
+	// .be-icon-container {
+	// 	flex: 1;
+	// }
+	// .be-icon-text {
+	// 	flex: 1;
+	// }
+	&.be-icon-align-right {
+		text-align: right;
+		// .be-icon-container {
+		// 	text-align: right;
+		// }
+		justify-content: flex-end;
+	}
+	&.be-icon-align-center {
+		text-align: center;
+		justify-content: center;
+		// .be-icon-container {
+		// 	text-align: center;
+		// }
+	}
+	.be-icon-text {
+		p:last-child {
+			margin: 0;
+		}
+		&.text-align-center {
+			text-align: center;
+		}
+		&.text-align-right {
+			text-align: right;
+		}
+	}
+}
+
+// .be-icon-group {
+// 	&.group-horizontal {
+// 		@include flexbox( 'row' );
+// 		&.group-align-center {
+// 			justify-content: center;
+// 		}
+// 		&.group-align-right {
+// 			justify-content: flex-end;
+// 		}
+// 	}
+// 	&.group-vertical {
+
+// 	}
+// }
+
+// .fl-module-beicons,
+// .fl-module-beicongroups {
+// 	.be-icon,
+// 	.be-icon:before {
+// 		line-height: 1;
+// 		text-align: center;
+// 		width: 1em;
+// 		height: 1em;
+// 	}
+// 	.be-icon-wrap {
+// 		line-height: 1;
+// 	}
+// 	.icon-align-left,
+// 	.icon-align-right {
+// 		@include flexbox( 'row' );
+// 		align-items: center;
+// 	}
+// 	.be-icon-wrap {
+// 		@include flexbox( 'row' );
+// 		align-items: center;
+// 		justify-content: center;
+// 		text-align: center;
+// 	}
+// 	.icon-align-center {
+// 		text-align: center;
+// 	}
+// 	.icon-align-left {
+// 		.be-icon-text {
+// 			padding-left: 10px;
+// 		}
+// 	}
+// 	.icon-align-right {
+// 		.be-icon-text {
+// 			padding-right: 10px;
+// 		}
+// 		.be-icon-wrap {
+// 			order: 2;
+// 		}
+// 	}
+// 	.be-icon-text {
+// 		p:last-child {
+// 			margin: 0;
+// 		}
+// 	}
+// }
+//
+.be-icon-group {
+	&.group-horizontal {
+		@include flexbox('row');
+		flex-wrap: wrap;
+		&.group-align-center {
+			justify-content: center;
+		}
+		&.group-align-right {
+			justify-content: flex-end;
+		}
+	}
+}

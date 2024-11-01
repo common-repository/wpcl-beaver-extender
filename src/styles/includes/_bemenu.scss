@@ -1,0 +1,29 @@
+.fl-module-bemenu {
+	.menu {
+		list-style-type: none;
+		list-style-position: inside;
+		padding: 0;
+		margin: 0;
+	}
+}
+.bemenu {
+	&.vertical-menu {
+		li {
+			display: block;
+		}
+	}
+	&.horizontal-menu {
+		li {
+			display: inline-block;
+		}
+	}
+	&.left-menu {
+		text-align: left;
+	}
+	&.center-menu {
+		text-align: center;
+	}
+	&.right-menu {
+		text-align: right;
+	}
+}

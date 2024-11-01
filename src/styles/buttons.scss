@@ -1,0 +1,10 @@
+.be-seperator {
+	position: absolute;
+	pointer-events : none;
+	left: 0;
+	right: 0;
+	svg,
+	img {
+		vertical-align: top;
+	}
+}

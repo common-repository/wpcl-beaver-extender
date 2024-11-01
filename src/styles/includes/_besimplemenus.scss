@@ -1,0 +1,25 @@
+.fl-module-besimplemenu .be-simple-menu {
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+	.be-simple-menu-item {
+		list-style-type: none;
+		list-style-position: inside;
+	}
+	&.be-horizontal {
+		@include flexbox('row');
+		flex-wrap: wrap;
+		li {
+			padding: 0 10px;
+		}
+	}
+	&.be-align-center {
+		text-align: center;
+		justify-content: center;
+	}
+	&.be-align-right {
+		text-align: right;
+		justify-content: flex-end;
+	}
+}
